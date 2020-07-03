@@ -1,0 +1,513 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* overflow-x: hidden; */
+}
+
+a {
+    text-transform: capitalize;
+}
+
+/* logo */
+
+.logo {
+    text-transform: uppercase;
+    display: flex;
+    font-size: 15px;
+    height: 7rem;
+    width: 25vw;
+    padding: 0 1rem;
+    background: orange;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+}
+
+/* navbar */
+
+.nav a {
+    text-decoration: none;
+    color: orange;
+    text-transform: capitalize;
+    
+
+}
+
+.navbar {
+    display: flex;
+    
+    /* width: 100vw; */
+    border-top: orange solid 5px;
+}
+
+.nav {
+    flex-wrap: wrap;
+    background: black;
+    display: flex;
+    height: 7rem;
+    width: 75vw;
+    justify-content: space-evenly;
+}
+
+.nav-option {
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        display: block;
+    }
+
+    .logo {
+        width: 100%;
+        padding:  0;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-option {
+        padding: 1rem 0;
+    }
+}
+
+/* .banner */
+
+.banner {
+    display: flex;
+    height: 70vh;
+    /* width: 100vw; */
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/images/top-view-photo-of-people-discussing-3182774.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.banner h1 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.heading-underline {
+    margin-left: 67px;
+    height: 5px;
+    width: 145px;
+    background: black;
+    margin-bottom: 1rem;
+    
+}
+
+.heading button {
+    height: 3.5rem;
+    width: 9rem;
+    font-size: 24px;
+    color: orange;
+    background: none;
+    border: solid orange 3px;
+    margin: 0 5px;
+}
+
+/* skill section  */
+
+.skill-section {
+    
+    height: 100%;
+    /* width: 100vw; */
+    background: #cccccc;
+    
+}
+
+.skill h1 {
+    color: orange;
+    font-size: 32px;
+}
+
+.skill p {
+    text-align: center;
+    color: white;
+}
+
+.skill {
+    margin: auto;
+    padding: 3rem 0;
+    height: 18rem;
+    width: 14rem;
+    text-align: center;
+}
+
+.skill .fa {
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+@media (min-width: 576px) {
+    .skill-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width: 990px) {
+    .skill-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1rem;
+
+    }
+}
+
+/* sevices */
+
+.services {
+    height: 100%;
+    background-image: url(/images/services.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* text-align: center; */
+    
+
+}
+
+.services h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    padding-top: 2rem;
+}
+ 
+.services h2{
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 20px;
+    
+}
+
+.service-container {
+    padding: 3rem 2rem;
+    text-align: center;
+
+}
+
+.service-container .black{
+    height: 15rem;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ;
+}
+
+.service-container .white{
+    height: 15rem;
+    color: black;
+    background: linear-gradient(rgba(206,208,206,0.6), rgba(206,208,206,0.6)) ;
+}
+
+.service-card .fa {
+    font-style: normal;
+    font-size: 50px;
+    padding: 2rem 0 1rem 0;
+    color: orange;
+}
+
+.service-underline {
+    height: 7px;
+    width: 200px;
+    background: orange;
+    margin: auto;
+
+}
+
+@media (min-width: 576px) {
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0;
+    }
+    
+    .service-container .service-card:nth-of-type(1) {
+        order: 1;
+    }
+
+    .service-container .service-card:nth-of-type(2) {
+        order: 2;
+    }
+
+    .service-container .service-card:nth-of-type(3) {
+        order: 4;
+    }
+
+    .service-container .service-card:nth-of-type(4) {
+        order: 3;
+    }
+
+}
+
+/* projects */
+.projects-heading {
+    background: #ccc;
+    width: 100%;
+    
+}
+
+
+
+.projects-heading h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 60px;
+    color: black;
+    margin: 0;
+    padding: 40px 0 10px 0;   
+}
+
+.projects-heading .underline {
+    height: 7px;
+    width: 200px;
+    background: orange;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+.project-container {
+    margin: auto;
+    
+    padding-bottom: 5rem;
+}
+
+.project img{
+    height: 200px;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.project {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .project-container {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* justify-content: space-evenly; */
+    }
+}
+
+@media (min-width: 990px) {
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-column-gap: 1rem; */
+        /* justify-content: space-around; */
+    }
+}
+
+/* contact-us */
+
+.contact p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+}
+
+.contact {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/images/filler.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 3rem;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    color: black;
+    background: orange;
+}
+
+.contact button {
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 3px;
+    color: orange;
+    border: orange solid 3px;
+}
+
+@media (min-width: 576px) {
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+/* recent-post */
+
+.recent-post {
+    margin: auto;
+    
+    background: #ccc;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.recent-post h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 60px;
+    color: black;
+    margin: 0;
+    padding: 40px 0 10px 0; 
+}
+
+.recent-post .underline {
+    height: 7px;
+    width: 200px;
+    background: orange;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+.post-card img {
+    height: 200px;
+    width: 304px;
+}
+
+.post-card {
+    margin: 2rem auto;
+    text-align: left;
+    width: 19rem;
+    background: white;
+   
+    
+}
+
+
+.post-card h2{
+    text-transform: capitalize;
+}
+
+.post-card button {
+    text-transform: capitalize;
+    color: orange;
+    font-size: 25px;
+    border: orange solid 3px;
+    margin-bottom: 1.5rem;
+}
+
+.post-card .content {
+    padding: 0 0.5rem;
+}
+
+@media (min-width: 576px) {
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 990px) {
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* footer */
+
+.footer {
+    background: black;
+    color: white;
+}
+
+.footer h1 {
+    text-transform: uppercase;
+    display: flex;
+    margin: 0;
+    font-size: 20px;
+    padding: 1rem 0.5rem;
+}
+
+@media (min-width: 576px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .foo {
+        flex: 0 0 calc(50% - 0);
+    }    
+    
+}
+
+.footer .fa {
+    font-size: 25px;
+    padding: 1rem 0.5rem;
+}
+
+.icons {
+    width: 15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
